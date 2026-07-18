@@ -915,7 +915,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f143e2e2bb301c459b7102954d6d580, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  maxSpeed: 4
+  accelerationTime: 2
+  decelerationTime: 1
   cam: {fileID: 330585546}
 --- !u!1 &1561790151
 GameObject:
