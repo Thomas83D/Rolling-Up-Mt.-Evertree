@@ -21,6 +21,7 @@ public class CameraRotate : MonoBehaviour
 
     private void Update()
     {
+        // Rotate Camera 90 or -90 degrees
         HandleCameraRotation();
     }
 

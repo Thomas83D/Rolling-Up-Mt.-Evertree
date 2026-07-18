@@ -23,6 +23,7 @@ public class PlayerController : MonoBehaviour
     {
         float moveRight = Input.GetAxis("Horizontal") * acceleration;
 
+        // Movement relative to camera position
         Vector3 camRight = cam.right;
         camRight.y = 0;
         Vector3 rightRelatve = camRight * moveRight;
@@ -30,6 +31,7 @@ public class PlayerController : MonoBehaviour
 
         moveDir += -rb.linearVelocity;
 
+        // Player movement
         rb.AddForce(moveDir * deceleration, ForceMode.Force);
     }
 }
